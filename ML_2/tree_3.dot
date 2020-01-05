@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Credit_History <= 0.5\nentropy = 0.868\nsamples = 384\nvalue = [111, 273]"] ;
+1 [label="LoanAmount <= 128.5\nentropy = 0.556\nsamples = 54\nvalue = [47, 7]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="CoapplicantIncome <= 2360.0\nentropy = 0.222\nsamples = 28\nvalue = [27, 1]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 24\nvalue = [24, 0]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.811\nsamples = 4\nvalue = [3, 1]"] ;
+2 -> 4 ;
+5 [label="Self_Employed <= 0.5\nentropy = 0.779\nsamples = 26\nvalue = [20, 6]"] ;
+1 -> 5 ;
+6 [label="entropy = 0.9\nsamples = 19\nvalue = [13, 6]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 7\nvalue = [7, 0]"] ;
+5 -> 7 ;
+8 [label="Semiurban <= 0.5\nentropy = 0.71\nsamples = 330\nvalue = [64, 266]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="ApplicantIncome <= 17916.5\nentropy = 0.821\nsamples = 195\nvalue = [50, 145]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.803\nsamples = 192\nvalue = [47, 145]"] ;
+9 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]"] ;
+9 -> 11 ;
+12 [label="ApplicantIncome <= 5717.0\nentropy = 0.481\nsamples = 135\nvalue = [14, 121]"] ;
+8 -> 12 ;
+13 [label="entropy = 0.32\nsamples = 103\nvalue = [6, 97]"] ;
+12 -> 13 ;
+14 [label="entropy = 0.811\nsamples = 32\nvalue = [8, 24]"] ;
+12 -> 14 ;
+}
